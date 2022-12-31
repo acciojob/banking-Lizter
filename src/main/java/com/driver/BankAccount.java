@@ -49,7 +49,7 @@ public class BankAccount {
 
         accNo = "";
 
-        generate(accNo,digits,sum);
+        //generate(accNo,digits,sum);
         if (accNo.length() == 0) {
             throw new Exception("Account Number can not be generated");
         }
@@ -76,7 +76,7 @@ public class BankAccount {
     }
 
 
-    public void generate(String gAccNo, int digits, int sum) {   //me
+    /*public void generate(String gAccNo, int digits, int sum) {   //me
 
         if (gAccNo.length() > digits) {
             return;
@@ -95,8 +95,10 @@ public class BankAccount {
         for (int i = 0; i < 10; i++) {
             generate(gAccNo + Integer.toString(i), digits, sum);
         }
+        */
+
 
 
     }
-}
+
 
