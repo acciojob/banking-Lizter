@@ -2,7 +2,7 @@ package com.driver;
 
 import java.io.*;
 
-class isValid {
+class IsValid {
     static char getMaxCountChar(int[] count) {
         int max = 0;
         char ch = 0;

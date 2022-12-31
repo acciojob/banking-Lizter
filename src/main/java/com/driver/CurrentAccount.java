@@ -7,8 +7,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-import static com.driver.isValid.rearrangeString;
-
 public class CurrentAccount extends BankAccount {
     String tradeLicenseId; //consists of Uppercase English characters only
 
@@ -42,7 +40,7 @@ public class CurrentAccount extends BankAccount {
 
         if(valid == false) {
             String str=tradeLicenseId;
-            String res = rearrangeString(str);
+            String res = IsValid.rearrangeString(str);
             if(res =="")
                 throw new Exception("Valid License can not be generated");
             else
